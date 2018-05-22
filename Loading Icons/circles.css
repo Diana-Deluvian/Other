@@ -1,0 +1,128 @@
+.circles{
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: white !important;
+}
+
+.inner-two{
+    height: 100%;
+    width: 100%;
+    background: #FFF;
+    border: 10px solid #1a1a1a;
+    border-radius: 50%;
+    padding: 15px;
+    box-sizing: border-box;
+}
+.container {
+    width: 200px;
+    height: 200px;
+    margin: 1%;
+    display: inline-block;
+}
+
+.rotations {
+  animation-name: spinning-circle;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+
+}
+
+@-webkit-keyframes spinning-circle {
+  0% {
+    transform: rotate(0deg);
+    transform-origin: -15% -15%;
+  }
+  100% {
+    transform: rotate(360deg);
+    transform-origin: 15% 15%;
+  }
+}
+
+
+.big_circle {
+  margin-top: 100px;
+  margin-left: 100px;
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  border-radius: 50%;
+  z-index: 0;
+  display: inline-block;
+}
+
+.inner_circle {
+  width: 80%;
+  height: 80%;
+  background-color: black;
+  border: 5px solid white;
+  border-radius: 50%;
+  margin-top: 10%;
+  margin-left: 10%;
+  z-index: 1;
+  animation-name: spinning-circle;
+  animation-duration:2.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function:linear;
+}
+
+@keyframes crescent-load {
+    0%   {  margin-top: 10%;
+  margin-left: 10%;}
+    25%  {  margin-top: 15%;
+  margin-left: -5%;}
+    50%  {  margin-top: 0%;
+  margin-left: 0%;}
+    75%  {  margin-top: 0%;
+  margin-left: 15%;}
+    100% {  margin-top: 10%;
+  margin-left: 10%;}
+}
+
+@-webkit-keyframes spinning-circle {
+  0% {
+    transform: rotate(0deg);
+    transform-origin: -5% -5%;
+  }
+  100% {
+    transform: rotate(360deg);
+    transform-origin: 5% 5%;
+  }
+}
+
+
+
+.big_circle2 {
+  width: 200px;
+  height: 200px;
+  background-color: black;
+  border-radius: 50%;
+  z-index: 0;
+}
+
+.inner_circle2 {
+  width: 90%;
+  height: 90%;
+  background-color: black;
+  border: 10px solid white;
+  border-radius: 50%;
+  margin-top: 10%;
+  margin-left: 10%;
+  z-index: 1;
+  animation-name: crescent-load;
+  animation-duration:2.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes crescent-load {
+    0%   {  margin-top: 10%;
+  margin-left: 10%;}
+    25%  {  margin-top: 15%;
+  margin-left: -5%;}
+    50%  {  margin-top: 0%;
+  margin-left: 0%;}
+    75%  {  margin-top: 0%;
+  margin-left: 15%;}
+    100% {  margin-top: 10%;
+  margin-left: 10%;}
+}
